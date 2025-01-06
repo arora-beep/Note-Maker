@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Note Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced Notes Manager</h1>
+        <input type="text" id="titleInput" placeholder="Title">
+        <textarea id="contentInput" placeholder="Write your note here..."></textarea>
+        <input type="date" id="deadlineInput">
+        <button onclick="createNote()">Save Note</button>
+        <h2>Saved Notes</h2>
+        <input type="text" id="searchInput" placeholder="Search notes..." oninput="searchNotes()">
+        <div id="noteList"></div>
+    </div>
+</body>
+</html>
